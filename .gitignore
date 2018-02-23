@@ -1,8 +1,25 @@
-target
-.idea
-*.iml
-node_modules
-bower_components
-.settings
-.project
+target/
+!supplier-portal-common/.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
 .classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+/supplier-portal-parent/supplier-portal-common/src/main/resources/application.properties
