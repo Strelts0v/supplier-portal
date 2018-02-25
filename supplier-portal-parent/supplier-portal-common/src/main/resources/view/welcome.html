@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/welcome.css}"/>
+</head>
+<body>
+    <div class="starter-template">
+
+        <h1>Spring Boot Thymeleaf Example</h1>
+        <h2>
+            <span th:text="#{greeting}"></span>
+            <span th:text="${value}"></span>
+        </h2>
+
+        <span th:text="#{lang.change}"></span>:
+        <select id="locales">
+            <option value=""></option>
+            <option value="en" th:text="#{lang.en}"></option>
+            <option value="it" th:text="#{lang.it}"></option>
+        </select>
+    </div>
+
+<script th:src="@{/js/lib/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/js/welcome.js}"></script>
+
+</body>
+</html>
