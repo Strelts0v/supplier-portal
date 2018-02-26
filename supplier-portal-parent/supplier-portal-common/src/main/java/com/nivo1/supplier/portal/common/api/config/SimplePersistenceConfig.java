@@ -25,7 +25,7 @@ public class SimplePersistenceConfig {
 
     private DataSource getDataSource() {
         return DataSourceBuilder.create()
-                .url(env.getProperty("spring.datasource.url") + "supplierportal")
+                .url(env.getProperty("spring.datasource.url") + env.getProperty("db.default-schema"))
                 .password(env.getProperty("spring.datasource.password"))
                 .username(env.getProperty("spring.datasource.username"))
                 .driverClassName(env.getProperty("spring.datasource.driver-class-name"))

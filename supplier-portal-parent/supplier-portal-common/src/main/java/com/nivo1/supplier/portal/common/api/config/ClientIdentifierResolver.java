@@ -8,7 +8,7 @@ public class ClientIdentifierResolver implements CurrentTenantIdentifierResolver
     @Override
     public String resolveCurrentTenantIdentifier() {
         String id = ClientContextHolder.getClientIdentifier();
-        return id == null ? "supplierportal" : id;
+        return id == null ? "supplier_portal" : id;
     }
 
     @Override

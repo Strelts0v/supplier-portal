@@ -11,6 +11,10 @@
 	<name>supplier-portal-common</name>
 	<description>Supplier Portal Common</description>
 
+	<properties>
+		<flyway.version>5.0.2</flyway.version>
+	</properties>
+
 	<parent>
 		<groupId>com.nivo1</groupId>
 		<artifactId>supplier-portal-parent</artifactId>
@@ -43,6 +47,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<version>${flyway.version}</version>
 		</dependency>
 	</dependencies>
 
